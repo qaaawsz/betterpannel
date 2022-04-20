@@ -5,6 +5,10 @@
   border-right: 0.5px solid #e8e8e8;
   background: white;
 
+  .link {
+    text-decoration: none;
+  }
+
   hr {
     height: 0;
     margin: 0;
@@ -43,6 +47,17 @@
 
         &:hover {
           background-color: #ece8ff;
+        }
+      }
+
+      .disabled {
+        pointer-events: none;
+        cursor: default;
+        background-color: transparent;
+        transition-property: none;
+
+        span, .icon {
+          color: lightgray;
         }
       }
 

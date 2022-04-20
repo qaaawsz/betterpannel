@@ -15,14 +15,14 @@ const HomePage = () => {
                     <Widget type="balance"/>
                 </div>
                 <div className="charts">
-                    <Featured />
-                    <Chart />
+                    <Featured/>
+                    <Chart title="Last Year (Revenue)"/>
                 </div>
                 <div className="listContainer">
                     <div className="listTitle">
-                        Latst Transactions
+                        Latest Transactions
                     </div>
-                    <CustomTable />
+                    <CustomTable/>
                 </div>
             </div>
         </div>

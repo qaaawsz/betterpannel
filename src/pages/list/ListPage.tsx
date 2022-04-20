@@ -2,13 +2,13 @@ import React from 'react'
 import './listpage.scss'
 import {Database, Navbar, Sidebar} from '../../global/exports'
 
-const ListPage = () => {
+const ListPage: React.FC<{ title: string }> = ({title}) => {
     return (
         <div className="list">
             <Sidebar/>
             <div className="listContainer">
                 <Navbar/>
-                <Database/>
+                <Database title={title}/>
             </div>
         </div>
     )

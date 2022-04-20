@@ -14,15 +14,21 @@ const data = [
     {name: 'September', Total: 5459},
 ]
 
-const Chart = () => {
+interface IChart {
+    title: string
+    aspectX?: number
+    aspectY?: number
+}
+
+const Chart: React.FC<IChart> = ({title, aspectX = 2, aspectY = 1}) => {
     return (
         <div className="chart">
             <div className="wrapper">
-                <div className="title">Last Year (Revenue)</div>
-                <ResponsiveContainer width="100%" aspect={2 / 1}>
+                <div className="title">{title}</div>
+                <ResponsiveContainer width="100%" aspect={aspectX / aspectY}>
                     <AreaChart
-                        width={500}
-                        height={400}
+                        // width={500}
+                        // height={400}
                         data={data}
                         margin={{
                             top: 10,

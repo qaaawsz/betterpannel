@@ -4,7 +4,7 @@ import {DataGrid} from '@mui/x-data-grid'
 import {userColumns, userRows} from './TableData'
 import './database.scss'
 
-const Database = () => {
+const Database: React.FC<{ title: string }> = ({title}) => {
     const [data, setData] = useState(userRows)
 
     const handleDelete = (id: string) => {
@@ -36,7 +36,7 @@ const Database = () => {
     return (
         <div className="datatable">
             <div className="datatableTitle">
-                Add New User
+                {title}
                 <Link to="/users/new" className="link">
                     Add New
                 </Link>
