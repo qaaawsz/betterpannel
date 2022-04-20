@@ -2,10 +2,14 @@
     font-family: 'Nunito-Regular';
     src: local('Nunito-Regular'), url("./fonts/Nunito-Regular.ttf") format('truetype');
 }
+@font-face {
+    font-family: 'Nunito-Light';
+    src: local('Nunito-Light'), url("./fonts/Nunito-Light.ttf") format('truetype');
+}
 
 body {
     margin: 0;
-    font-family: Nunito-Regular;
+    font-family: Nunito-Regular, serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
